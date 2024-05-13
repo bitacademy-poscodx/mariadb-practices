@@ -16,6 +16,7 @@ sftp:/home/kickscar> put D:\poscodx2024\강의\03.자료\MariaDB\employees_db.zi
 
 3. restore employees db
 ```sh
+# mv /home/kickscar/employees_db.zip .
 # unzip employees_db.zip
 # cd employees_db
 # mysql -u root -D employees -p < employees.sql
