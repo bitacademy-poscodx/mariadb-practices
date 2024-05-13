@@ -12,7 +12,7 @@ select concat(first_name, ' ', last_name)
 -- 출력은 이름, 성별, 입사일 순서이고 "이름", "성별", "입사일"로 컬럼 이름을 대체해 보세요.
   select concat(first_name, ' ', last_name) as '이름', gender as '성별', hire_date as '입사일' 
     from employees
-order by hire_date;
+order by hire_date asc;
 
 -- 문제3.
 -- 여직원과 남직원은 각 각 몇 명이나 있나요?(각각 쿼리 만들어서 각각 출력 또는 집계로 한 번에 해결)
