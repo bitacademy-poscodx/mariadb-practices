@@ -21,7 +21,7 @@ order by hire_date asc;
 group by gender;
 
 -- 문제4.
--- 현재(to_date='9999-01-01', 근무하고 있는 직원 수는 몇 명입니까? (salaries 테이블을 사용합니다.) 
+-- 현재(to_date='9999-01-01'), 근무하고 있는 직원 수는 몇 명입니까? (salaries 테이블을 사용합니다.) 
   select count(*)
     from salaries
    where to_date = '9999-01-01';
