@@ -28,7 +28,7 @@ group by gender;
    
 -- 문제5.
 -- 부서는 총 몇 개가 있나요?
-select count(distinct dept_no)
+select count(*)
   from departments; 
   
 -- 문제6.
@@ -39,7 +39,7 @@ select count(*)
  
 -- 문제7.
 -- 전체 부서를 출력하려고 합니다. 순서는 부서이름이 긴 순서대로 출력해 보세요.
-  select distinct dept_name
+  select dept_name
     from departments
 order by length(dept_name) desc; 
 
