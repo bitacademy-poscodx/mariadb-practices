@@ -16,7 +16,8 @@ order by hire_date asc;
 
 -- 문제3.
 -- 여직원과 남직원은 각 각 몇 명이나 있나요?(각각 쿼리 만들어서 각각 출력 또는 집계로 한 번에 해결)
-  select if(gender = 'M', '남자', '여자') as '성별', count(*) as '수'
+  select if(gender = 'M', '남자', '여자') as '성별',
+		 count(*) as '수'
     from employees
 group by gender;
 
