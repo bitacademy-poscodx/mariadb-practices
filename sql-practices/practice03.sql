@@ -67,7 +67,7 @@
       and a.emp_no = c.emp_no
       and b.to_date = '9999-01-01'
       and c.to_date = '9999-01-01'
-	  and b.salary > 40000
+      and b.salary > 40000
       and c.title = 'Engineer';
 
 -- 문제8.
