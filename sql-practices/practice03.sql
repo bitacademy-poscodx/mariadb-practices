@@ -61,7 +61,7 @@
 -- projection: 사번 이름(first_name) 급여 타이틀
    select a.emp_no, concat(a.first_name, ' ', a.last_name), b.salary, c.title
      from employees a,
-		      salaries b,
+          salaries b,
           titles c
     where a.emp_no = b.emp_no
       and a.emp_no = c.emp_no
@@ -87,7 +87,7 @@
 -- projection: 부서명 평균연봉
   select d.dept_name, avg(salary)
     from employees a, dept_emp b, salaries c, departments d
-	 where a.emp_no = b.emp_no
+   where a.emp_no = b.emp_no
      and a.emp_no = c.emp_no
      and b.dept_no = d.dept_no
      and b.to_date = '9999-01-01'
@@ -100,7 +100,7 @@ order by avg(salary) desc;
 -- projection: 직책명 평균연봉
    select c.title, avg(b.salary)
      from employees a,
-		      salaries b,
+          salaries b,
           titles c
     where a.emp_no = b.emp_no
       and a.emp_no = c.emp_no
