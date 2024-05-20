@@ -40,7 +40,7 @@ public class EmailListDaoTest {
 	@Order(2)
 	public void testFindAll() {
 		List<EmaillistVo> list = new EmaillistDao().findAll();
-		assertEquals(count + 1, list.size());
+		assertEquals(count+1, list.size());
 	}
 	
 	@Test
